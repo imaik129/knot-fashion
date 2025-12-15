@@ -233,7 +233,7 @@ export default function VideoMeshOverlay({
               posArray[i * 3 + 1] = v[1];  // Y: up
               posArray[i * 3 + 2] = v[2];  // Z: forward
             });
-            positions.array = posArray;
+            positions.set(posArray);
             positions.needsUpdate = true;
             geometry.computeVertexNormals();
           }
