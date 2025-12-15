@@ -36,11 +36,16 @@ export default function BlogsPage() {
               Short reads on fit, circularity, and building quietly with craft.
             </p>
           </div>
-          <Link href="/">
-            <Button variant="secondary" className="px-4 py-2 text-sm">
-              ← Back
-            </Button>
-          </Link>
+          <div className="flex gap-3">
+            <Link href="/#waitlist">
+              <Button className="px-4 py-2 text-sm">Join waitlist</Button>
+            </Link>
+            <Link href="/">
+              <Button variant="secondary" className="px-4 py-2 text-sm">
+                ← Back
+              </Button>
+            </Link>
+          </div>
         </header>
 
         <div className="space-y-10">

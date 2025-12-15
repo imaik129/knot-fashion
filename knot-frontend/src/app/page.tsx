@@ -75,7 +75,10 @@ export default function Home() {
               Built with people who care how garments live, move, and return.
             </p>
 
-            <Card className="max-w-xl border-white/10 bg-white/10 p-5 shadow-[0_25px_80px_-60px_rgba(0,0,0,0.8)] backdrop-blur">
+            <Card
+              id="waitlist"
+              className="max-w-xl border-white/10 bg-white/10 p-5 shadow-[0_25px_80px_-60px_rgba(0,0,0,0.8)] backdrop-blur"
+            >
               <form className="space-y-3" onSubmit={handleSubmit}>
                 <label className="space-y-2 text-sm text-slate-100">
                   <span>Signup for waitlist</span>
