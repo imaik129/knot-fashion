@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "knot-frontend/package.json", "use": "@vercel/next" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "knot-frontend/$1" }
+  ]
+}
+
