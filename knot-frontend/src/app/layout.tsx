@@ -12,9 +12,26 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://knot.fashion";
+
+const siteTitle = "Anti–Fast Fashion, Pro Perfect Fit | knot.fashion";
+const siteDescription =
+  "knot.fashion uses privacy‑respectful AI body scanning to help you buy clothes that actually fit. Less fast fashion churn, fewer returns, more pieces worth keeping.";
+
 export const metadata: Metadata = {
-  title: "Knot | Stealth Fashion Signals",
-  description: "A quiet waitlist for body-aware, circular fashion tooling.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteTitle,
+    template: "%s | knot.fashion",
+  },
+  description: siteDescription,
+  openGraph: {
+    type: "website",
+    siteName: "knot.fashion",
+    url: siteUrl,
+    title: "Anti–Fast Fashion, Pro Perfect Fit",
+    description: siteDescription,
+  },
 };
 
 export default function RootLayout({
@@ -32,3 +49,4 @@ export default function RootLayout({
     </html>
   );
 }
+
