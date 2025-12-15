@@ -26,7 +26,7 @@ export default function BlogsPage() {
       <div className="relative mx-auto flex max-w-5xl flex-col gap-8 px-6 py-10 sm:px-10 lg:px-14">
         <header className="flex flex-wrap items-center justify-between gap-4">
           <div>
-            <Badge className="border-white/30 bg-white/10 text-white">Field notes</Badge>
+            <Badge className="border-white/30 bg-white/10 text-white">Blogs</Badge>
             <h1 className="mt-3 text-3xl font-semibold sm:text-4xl text-white">Blogs</h1>
             <p className="mt-2 max-w-2xl text-slate-200">
               Short reads on fit, circularity, and building quietly with craft.

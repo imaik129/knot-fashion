@@ -52,12 +52,12 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-emerald-400 shadow-[0_0_0_6px_rgba(16,185,129,0.18)]" />
             <p className="text-xs uppercase tracking-[0.2em] text-slate-200">
-              Project Knot
+              knot.fashion
             </p>
           </div>
           <nav className="flex items-center gap-4 text-sm text-slate-200">
             <Link href="/blogs" className="transition hover:text-white">
-              Field notes
+              Blogs
             </Link>
           </nav>
         </header>
@@ -65,7 +65,7 @@ export default function Home() {
         <div className="flex flex-1 flex-col justify-center">
           <div className="max-w-3xl space-y-8">
             <Badge className="border-white/30 bg-white/10 text-white">
-              Invite-only fashion tech
+              Fashion tech
             </Badge>
             <h1 className="text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
               The new way to shop fashion: tailored quietly, fit-first, low-noise.
