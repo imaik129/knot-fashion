@@ -540,7 +540,7 @@ export default function ScanPage() {
                     }}
                   >
                     <option value="avg">Averaged pose</option>
-                    {frameOptions.map((f) => (
+                    {frameOptions.map((f: { key: string; label: string }) => (
                       <option key={f.key} value={f.key}>
                         {f.label}
                       </option>
