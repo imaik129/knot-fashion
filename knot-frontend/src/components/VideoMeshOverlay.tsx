@@ -344,7 +344,7 @@ export default function VideoMeshOverlay({
               <BodyMesh 
                 vertices={displayVertices} 
                 faces={faces}
-                meshRef={meshRef}
+                meshRef={meshRef as React.RefObject<THREE.Mesh>}
               />
             </group>
           </Canvas>
