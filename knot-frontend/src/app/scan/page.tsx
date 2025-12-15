@@ -49,7 +49,7 @@ export default function ScanPage() {
     setResult(null);
     setErrorMessage(null);
     setStatus("idle");
-    
+
     // Create preview URL for video
     if (selectedFile) {
       // Cleanup old URL if exists
@@ -93,7 +93,7 @@ export default function ScanPage() {
       }, 200);
 
       setStatus("processing");
-      
+
       const res = await fetch("/api/upload-scan", {
         method: "POST",
         body: formData,
@@ -211,7 +211,7 @@ export default function ScanPage() {
       return verts.map((v: any) => [Number(v[0]), Number(v[1]), Number(v[2])]);
     }
     if (ArrayBuffer.isView(verts) && (verts as any).length % 3 === 0) {
-      const arr = Array.from(verts as any);
+      const arr = Array.from(verts as any).map((v) => Number(v)) as number[];
       const out: number[][] = [];
       for (let i = 0; i < arr.length; i += 3) {
         out.push([arr[i], arr[i + 1], arr[i + 2]]);
@@ -297,8 +297,8 @@ export default function ScanPage() {
     selectedFrame?.vertices && selectedFrame.vertices.length > 0
       ? selectedFrame.vertices
       : derivedVertices.length > 0
-      ? derivedVertices
-      : cachedVertices;
+        ? derivedVertices
+        : cachedVertices;
 
   return (
     <main style={mainStyle}>
@@ -478,26 +478,26 @@ export default function ScanPage() {
                   status === "done"
                     ? "#ecfdf3"
                     : status === "error"
-                    ? "#fef2f2"
-                    : status === "uploading" || status === "processing"
-                    ? "#eff6ff"
-                    : "#f8fafc",
+                      ? "#fef2f2"
+                      : status === "uploading" || status === "processing"
+                        ? "#eff6ff"
+                        : "#f8fafc",
                 color:
                   status === "done"
                     ? "#166534"
                     : status === "error"
-                    ? "#b91c1c"
-                    : status === "uploading" || status === "processing"
-                    ? "#1d4ed8"
-                    : "#475569",
+                      ? "#b91c1c"
+                      : status === "uploading" || status === "processing"
+                        ? "#1d4ed8"
+                        : "#475569",
                 border:
                   status === "done"
                     ? "1px solid #bbf7d0"
                     : status === "error"
-                    ? "1px solid #fecdd3"
-                    : status === "uploading" || status === "processing"
-                    ? "1px solid #bfdbfe"
-                    : "1px solid #e2e8f0",
+                      ? "1px solid #fecdd3"
+                      : status === "uploading" || status === "processing"
+                        ? "1px solid #bfdbfe"
+                        : "1px solid #e2e8f0",
               }}
             >
               {status === "done" ? "✓ Complete" : status === "error" ? "✗ Error" : status === "uploading" || status === "processing" ? "Processing" : "Ready"}
