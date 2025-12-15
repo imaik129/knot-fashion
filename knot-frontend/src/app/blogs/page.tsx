@@ -46,12 +46,20 @@ export default function BlogsPage() {
               <div className="grid gap-4 md:grid-cols-2">
                 {pillar.posts.map((post) => (
                   <Link key={post.slug} href={`/blogs/${post.slug}`}>
-                    <Card className="rounded-xl border border-white/10 bg-white/5 p-5 transition hover:-translate-y-0.5 hover:border-emerald-400/60 hover:bg-white/10">
-                      <h3 className="text-lg font-semibold text-white">{post.title}</h3>
-                      <p className="mt-2 text-sm text-slate-200">{post.subtitle}</p>
-                      <p className="mt-3 text-sm text-slate-200 leading-relaxed line-clamp-3">
-                        {post.body[0]}
-                      </p>
+                    <Card className="overflow-hidden rounded-xl border border-white/10 bg-white/5 transition hover:-translate-y-0.5 hover:border-emerald-400/60 hover:bg-white/10">
+                      <div
+                        className="h-40 w-full bg-cover bg-center"
+                        style={{
+                          backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.35)), url(${post.image})`,
+                        }}
+                      />
+                      <div className="p-5 space-y-2">
+                        <h3 className="text-lg font-semibold text-white">{post.title}</h3>
+                        <p className="text-sm text-slate-200">{post.subtitle}</p>
+                        <p className="text-sm text-slate-200 leading-relaxed line-clamp-3">
+                          {post.summary}
+                        </p>
+                      </div>
                     </Card>
                   </Link>
                 ))}

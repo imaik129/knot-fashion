@@ -5,6 +5,7 @@
     "title": "Why Clothing Sizes Don’t Exist",
     "subtitle": "A calm explainer on inconsistency and why fit feels random.",
     "summary": "Sizes are marketing artifacts, not measurements. Vanity sizing, brand drift, and the reality of human variance make labels unreliable.",
+    "image": "https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Clothing sizes were never scientific. They emerged from marketing, not measurements, and drifted as brands chased different demographics.",
       "Vanity sizing inflates numbers to flatter shoppers. Brand drift shifts blocks over time. Neither tracks real bodies, which vary far more than a size label can capture.",
@@ -17,6 +18,7 @@
     "title": "How to Measure Your Body (Most Guides Are Wrong)",
     "subtitle": "Practical, non-fussy steps to get repeatable measurements at home.",
     "summary": "Most guides skip the basics: posture, tape position, and consistency. This shows how to measure so results repeat.",
+    "image": "https://images.unsplash.com/photo-1600093463592-9f61807aef11?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Stand naturally, feet under hips, shoulders relaxed. Avoid sucking in or overextending—fit is for how you actually move.",
       "Place the tape flat, snug but not tight. Key points: full bust, natural waist, high hip, low hip, shoulder width, rise, inseam.",
@@ -29,6 +31,7 @@
     "title": "Made-to-Measure vs Bespoke vs Custom",
     "subtitle": "Clear differences, when each makes sense, and why cost varies.",
     "summary": "Made-to-measure adjusts a base pattern. Bespoke builds from a personal block. Custom toggles details. Choose based on use and budget.",
+    "image": "https://images.unsplash.com/photo-1612902457794-2c5b56c69237?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Made-to-measure tweaks an existing pattern to your measurements—efficient and accurate for most needs.",
       "Bespoke drafts a block for you and iterates with fittings—best for complex bodies or statement pieces.",
@@ -41,6 +44,7 @@
     "title": "Why Online Clothing Returns Are So High",
     "subtitle": "Fit uncertainty, cost to brands, and what better sizing looks like.",
     "summary": "Returns are mostly fit failures. They cost margin, create waste, and annoy customers. Better sizing reduces all three.",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Most returns stem from size guesswork: shoppers bracket sizes because charts don’t reflect real bodies or fabric behavior.",
       "Each return burns shipping, handling, and often ends in markdown or waste. It’s margin loss masquerading as convenience.",
@@ -53,6 +57,7 @@
     "title": "Fast Fashion vs Made-to-Measure",
     "subtitle": "Which is more sustainable when you factor fit and longevity.",
     "summary": "When you include lifespan and returns, made-to-measure often wins. Fit drives how long garments stay in wardrobes.",
+    "image": "https://images.unsplash.com/photo-1475180098004-ca77a66827be?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Fast fashion optimizes volume, not longevity. Poor fit accelerates churn and returns, compounding impact.",
       "Made-to-measure reduces returns and extends wear. Longer lifespan per piece reduces total footprint.",
@@ -65,6 +70,7 @@
     "title": "What Happens to Clothes That Get Returned?",
     "subtitle": "The hidden journey of returns, resale, and waste.",
     "summary": "Most returns don’t go back to shelves. Many are liquidated or destroyed. Fit accuracy can shrink this waste stream.",
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Returned items face reprocessing, inspection, and often markdown. Some never make it back to primary shelves.",
       "Liquidation and destruction are common when reprocessing costs exceed resale value, creating avoidable waste.",
@@ -77,6 +83,7 @@
     "title": "The Real Environmental Cost of Guessing Your Size",
     "subtitle": "How misfit fuels waste and how to cut it down.",
     "summary": "Guessing size adds transport, repack, and disposal. Measuring once can eliminate repeated shipments.",
+    "image": "https://images.unsplash.com/photo-1520694478166-daaaaec95b69?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Each guess triggers shipping and handling; multiply by millions of orders and the footprint is huge.",
       "Returned garments often degrade in value or get discarded, pushing hidden impact into landfills.",
@@ -89,6 +96,7 @@
     "title": "How AI Body Scanning Works Using Only a Phone",
     "subtitle": "From video to a usable body map—privacy-respectful and fast.",
     "summary": "A short pipeline: capture, mesh, landmarks, and pattern mapping. Built to run with privacy in mind.",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Capture a short video; the system builds a mesh and finds landmarks like shoulders, waist, rise, and inseam.",
       "Quality checks clean noise; no need for depth sensors. Modern models infer shape from RGB alone.",
@@ -101,6 +109,7 @@
     "title": "3D Body Scans vs Size Charts",
     "subtitle": "Why charts break and how scans solve real-world variance.",
     "summary": "Charts assume averages; bodies aren’t average. Scans capture slope, rise, and asymmetry that charts miss.",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Size charts compress bodies into a few numbers; they ignore shoulder slope, torso length, hip shape, and asymmetry.",
       "3D scans recover these differences, improving block selection and pattern tweaks for real bodies.",
@@ -113,6 +122,7 @@
     "title": "Why Virtual Try-On Isn’t Enough",
     "subtitle": "Visualizing drape isn’t the same as verifying fit.",
     "summary": "Seeing a garment on an avatar helps, but without body data and pattern mapping, fit risk remains.",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80",
     "body": [
       "VTO shows how fabric might look but doesn’t guarantee fit at critical points like shoulder, rise, and waist.",
       "Without your measurements, VTO often defaults to averages—good for vibe, weak for assurance.",
@@ -125,6 +135,7 @@
     "title": "From Video to Perfect Fit: Digital Tailoring",
     "subtitle": "Linking capture, pattern adjustment, and make-ready.",
     "summary": "Digital pipelines connect capture to pattern changes. Humans stay in the loop for quality and taste.",
+    "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Video capture → mesh → landmarks → pattern deltas. Each step refines fit before cutting or sewing.",
       "Humans review edge cases and style intent. Automation handles repeatable math; people handle nuance.",
@@ -137,6 +148,7 @@
     "title": "Why Clothes Used to Last Longer",
     "subtitle": "Materials, make, and why durability shifted.",
     "summary": "Fabric choices and make standards slipped as volume rose. We outline what changed and how to reverse it.",
+    "image": "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Natural fibers and tighter weaves gave way to cheaper blends and looser constructions to cut cost.",
       "Make standards dropped: fewer stitches per inch, weaker seams, less reinforcement at stress points.",
@@ -149,6 +161,7 @@
     "title": "The Psychology of Fit",
     "subtitle": "Why we keep certain garments for years.",
     "summary": "Fit drives attachment. Pieces that move with us become identity—worth designing for.",
+    "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=900&q=80",
     "body": [
       "We keep garments that feel like us: balanced ease, the right length, comfort without slop.",
       "Signature pieces earn loyalty by removing friction—no tugging, no fidgeting, no guessing.",
@@ -161,6 +174,7 @@
     "title": "Tailoring Isn’t Old-Fashioned",
     "subtitle": "It just wasn’t scalable—until now.",
     "summary": "Tailoring stalled because scale was hard. Digital capture and pattern automation bring it back.",
+    "image": "https://images.unsplash.com/photo-1531498860502-7c67cf02f77c?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Traditional tailoring scales poorly across many bodies; each block was manual and slow.",
       "Digital capture and automated pattern deltas let makers serve more people without losing craft.",
@@ -173,6 +187,7 @@
     "title": "Designing for Bodies, Not Trends",
     "subtitle": "A calmer approach to wardrobes that stay.",
     "summary": "Trend churn ignores real bodies. Body-first design builds longer-lived wardrobes.",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80",
     "body": [
       "Trends prioritize novelty over fit. Bodies need stability: consistent blocks, adjustable details.",
       "Design for proportion, ease, and alteration paths so garments adapt over time.",
