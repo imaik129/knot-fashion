@@ -1,0 +1,32 @@
+# Dependencies
+node_modules
+
+# Next.js
+.next
+out
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+*.swp
+
+# Python / venv
+.venv
+venv
+
+# Large/local artifacts
+knot-backend/.venv
+knot-backend/knot-frontend/node_modules
+knot-backend/smpl_model_data.zip
+
+
