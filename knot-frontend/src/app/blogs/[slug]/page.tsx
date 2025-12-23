@@ -79,10 +79,71 @@ export default async function BlogArticle({
                     </Link>
                 </header>
 
-                <article className="space-y-4 text-base leading-relaxed text-slate-100">
-                    {post.body.map((para, idx) => (
-                        <p key={idx}>{para}</p>
+                <article className="space-y-6 text-base leading-relaxed text-slate-100">
+                    {/* Handle both old (body) and new (intro + sections) formats */}
+                    {post.intro ? (
+                        <div className="space-y-4">
+                            <p className="text-lg">{post.intro}</p>
+                        </div>
+                    ) : post.body ? (
+                        <div className="space-y-4">
+                            {post.body.map((para: string, idx: number) => (
+                                <p key={idx}>{para}</p>
+                            ))}
+                        </div>
+                    ) : null}
+
+                    {post.sections && post.sections.map((section, idx) => (
+                        <section key={idx} className="space-y-4">
+                            <h2 className="text-2xl font-semibold text-white mt-8 mb-4">{section.heading}</h2>
+                            {section.content.map((para, pIdx) => {
+                                // Parse markdown-style links [text](/blogs/slug)
+                                const parts: (string | React.ReactElement)[] = [];
+                                let lastIndex = 0;
+                                const linkRegex = /\[([^\]]+)\]\((\/blogs\/[^)]+)\)/g;
+                                let match;
+
+                                while ((match = linkRegex.exec(para)) !== null) {
+                                    if (match.index > lastIndex) {
+                                        parts.push(para.substring(lastIndex, match.index));
+                                    }
+                                    parts.push(
+                                        <Link
+                                            key={`link-${pIdx}-${match.index}`}
+                                            href={match[2]}
+                                            className="text-emerald-400 hover:text-emerald-300 underline underline-offset-2"
+                                        >
+                                            {match[1]}
+                                        </Link>
+                                    );
+                                    lastIndex = match.index + match[0].length;
+                                }
+                                if (lastIndex < para.length) {
+                                    parts.push(para.substring(lastIndex));
+                                }
+
+                                return (
+                                    <p key={pIdx}>
+                                        {parts.length > 0 ? parts : para}
+                                    </p>
+                                );
+                            })}
+                        </section>
                     ))}
+
+                    {post.faq && post.faq.length > 0 && (
+                        <section className="mt-12 space-y-6">
+                            <h2 className="text-2xl font-semibold text-white mb-6">Frequently Asked Questions</h2>
+                            <div className="space-y-6">
+                                {post.faq.map((item, idx) => (
+                                    <div key={idx} className="space-y-2">
+                                        <h3 className="text-lg font-semibold text-white">{item.question}</h3>
+                                        <p className="text-slate-200">{item.answer}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    )}
                 </article>
 
                 <section className="space-y-3">
