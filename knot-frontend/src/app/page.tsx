@@ -68,7 +68,7 @@ export default function Home() {
               Fashion tech
             </Badge>
             <h1 className="text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
-              The new way to shop fashion: tailored quietly, fit-first, low-noise.
+              Anti–fast fashion, pro perfect fit.
             </h1>
             <p className="max-w-2xl text-lg text-slate-200">
               Adaptive silhouettes, circular passports, and privacy-respectful fit data.

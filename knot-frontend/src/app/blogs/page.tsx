@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,12 @@ const grouped = ["Fit & Sizing", "Sustainability", "Technology", "Craft"].map(
     posts: blogPosts.filter((p) => p.pillar === pillar),
   })
 );
+
+export const metadata: Metadata = {
+  title: "Blogs on Fit, Sizing & Anti–Fast Fashion",
+  description:
+    "Calm, in‑depth reads on clothing fit, sizing, sustainable alternatives to fast fashion, and AI body scanning from knot.fashion.",
+};
 
 export default function BlogsPage() {
   return (
